@@ -1,0 +1,48 @@
+;; -*- Emacs-Lisp -*-
+
+;;; .emacs-vhdl-cache-IL2225_lab1_serial_FIR-jordi - design hierarchy cache file for Emacs VHDL Mode 3.38.1
+
+;; Project   : IL2225_lab1_serial_FIR
+;; Saved     : 2020-09-30 21:20:49 jordi
+
+
+;; version number
+(setq vhdl-cache-version "3.38.1")
+
+;; project name
+(setq project "IL2225_lab1_serial_FIR")
+
+;; entity and architecture cache
+(vhdl-aput 'vhdl-entity-alist project '
+(("arithmetic_unit" "arithmetic_unit" "~/Projects/IL2225/lab1/serial_FIR/src/arithmetic_unit.vhd" 6 (("behaviour" "behaviour" "~/Projects/IL2225/lab1/serial_FIR/src/arithmetic_unit.vhd" 24 (("mac_1" "MAC_1" "~/Projects/IL2225/lab1/serial_FIR/src/arithmetic_unit.vhd" 29 nil "mac" nil nil "work" nil)) nil)) "behaviour" (("ieee" . "std_logic_1164") ("ieee" . "numeric_std") ("work" . "types_and_constants"))) ("delay_line" "delay_line" "~/Projects/IL2225/lab1/serial_FIR/src/delay_line.vhd" 6 (("behaviour" "behaviour" "~/Projects/IL2225/lab1/serial_FIR/src/delay_line.vhd" 17 nil nil)) "behaviour" (("ieee" . "std_logic_1164") ("ieee" . "numeric_std") ("work" . "types_and_constants"))) ("fsm" "FSM" "~/Projects/IL2225/lab1/serial_FIR/src/FSM.vhd" 7 (("behavioral" "behavioral" "~/Projects/IL2225/lab1/serial_FIR/src/FSM.vhd" 20 nil nil)) "behavioral" (("ieee" . "std_logic_1164") ("ieee" . "numeric_std") ("work" . "types_and_constants"))) ("mac" "MAC" "~/Projects/IL2225/lab1/serial_FIR/src/MAC.vhd" 9 (("behaviour" "behaviour" "~/Projects/IL2225/lab1/serial_FIR/src/MAC.vhd" 23 nil nil)) "behaviour" (("ieee" . "std_logic_1164") ("ieee" . "numeric_std") ("work" . "types_and_constants"))) ("rom_coefficients" "ROM_coefficients" "~/Projects/IL2225/lab1/serial_FIR/src/ROM_coefficients.vhd" 10 (("behavior" "behavior" "~/Projects/IL2225/lab1/serial_FIR/src/ROM_coefficients.vhd" 20 nil nil)) "behavior" (("ieee" . "std_logic_1164") ("ieee" . "numeric_std") ("work" . "types_and_constants"))) ("serial_fir" "serial_FIR" "~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR.vhd" 6 (("structural" "structural" "~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR.vhd" 24 (("arithmetic_unit_1" "arithmetic_unit_1" "~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR.vhd" 93 nil "arithmetic_unit" nil nil "work" nil) ("fsm_1" "FSM_1" "~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR.vhd" 102 nil "fsm" nil nil "work" nil) ("rom_coefficients_1" "ROM_coefficients_1" "~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR.vhd" 114 nil "rom_coefficients" nil nil "work" nil) ("delay_line_1" "delay_line_1" "~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR.vhd" 119 nil "delay_line" nil nil "work" nil)) nil)) "structural" (("ieee" . "std_logic_1164") ("ieee" . "numeric_std") ("work" . "types_and_constants"))) ("serial_fir_tb" "serial_FIR_tb" "~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR_tb.vhd" 6 (("behavior" "behavior" "~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR_tb.vhd" 9 (("serial_fir_1" "serial_FIR_1" "~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR_tb.vhd" 21 nil "serial_fir" nil nil "work" nil)) nil)) "behavior" (("ieee" . "std_logic_1164") ("ieee" . "numeric_std") ("work" . "types_and_constants"))))
+)
+
+;; configuration cache
+(vhdl-aput 'vhdl-config-alist project '
+nil
+)
+
+;; package cache
+(vhdl-aput 'vhdl-package-alist project '
+(("types_and_constants" "types_and_constants" "~/Projects/IL2225/lab1/serial_FIR/src/types_and_constants.vhd" 7 nil nil (("ieee" . "std_logic_1164") ("ieee" . "numeric_std") ("ieee" . "math_real") ("ieee" . "math_real")) nil nil nil nil))
+)
+
+;; instantiated entities cache
+(vhdl-aput 'vhdl-ent-inst-alist project '
+(("serial_fir" "delay_line" "rom_coefficients" "fsm" "arithmetic_unit" "mac"))
+)
+
+;; design units per file cache
+(vhdl-aput 'vhdl-file-alist project '
+(("~/Projects/IL2225/lab1/serial_FIR/src/types_and_constants.vhd" nil nil nil nil ("types_and_constants") nil nil nil) ("~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR_tb.vhd" ("serial_fir_tb") ("behavior") ("serial_fir_tb") nil nil nil ("serial_fir_1") ("serial_fir")) ("~/Projects/IL2225/lab1/serial_FIR/src/serial_FIR.vhd" ("serial_fir") ("structural") ("serial_fir") nil nil nil ("delay_line_1" "rom_coefficients_1" "fsm_1" "arithmetic_unit_1") ("delay_line" "rom_coefficients" "fsm" "arithmetic_unit")) ("~/Projects/IL2225/lab1/serial_FIR/src/delay_line.vhd" ("delay_line") ("behaviour") ("delay_line") nil nil nil nil nil) ("~/Projects/IL2225/lab1/serial_FIR/src/arithmetic_unit.vhd" ("arithmetic_unit") ("behaviour") ("arithmetic_unit") nil nil nil ("mac_1") ("mac")) ("~/Projects/IL2225/lab1/serial_FIR/src/ROM_coefficients.vhd" ("rom_coefficients") ("behavior") ("rom_coefficients") nil nil nil nil nil) ("~/Projects/IL2225/lab1/serial_FIR/src/MAC.vhd" ("mac") ("behaviour") ("mac") nil nil nil nil nil) ("~/Projects/IL2225/lab1/serial_FIR/src/FSM.vhd" ("fsm") ("behavioral") ("fsm") nil nil nil nil nil))
+)
+
+;; source directories in project cache
+(vhdl-aput 'vhdl-directory-alist project '
+(("~/Projects/IL2225/lab1/serial_FIR/src/" "~/Projects/IL2225/lab1/serial_FIR/src/work/"))
+)
+
+;; shown design units cache
+(vhdl-aput 'vhdl-speedbar-shown-unit-alist project '
+nil
+)

@@ -1,0 +1,7 @@
+types_and_constants.vhd
+rom_coefficients.vhd
+mac.vhd
+arithmetic_unit.vhd
+fsm.vhd
+shift_register.vhd
+parallel_fir.vhd
